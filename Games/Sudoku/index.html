@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sudoku | By Falesteo</title>
+  <!-- importazione delle librerie -->
+  <script src="/Libraries/p5/p5.min.js"></script>
+  <script src="/Libraries/p5/p5.dom.min.js"></script>
+  <script src="/Libraries/p5/p5.sound.min.js"></script>
+  <script src="/Libraries/My Libraries/Mine.js"></script>
+  <!-- importazione dei font -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+  <!-- importazione del codice css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="top_page">
+    <h1 id="main_header">Sudoku</h1>
+    <h3 id="author">By Falesteo</h3>
+  </header>
+
+  <div id="game_area" class="row_cnt">
+    <!-- lista delle difficoltà -->
+    <ul id="d_list" class="column_cnt">
+      <h2>Nuovo</h2>
+      <button class="btn_1" id="easy">FACILE</button>
+      <button class="btn_1" id="medium">MEDIO</button>
+      <button class="btn_1" id="hard">DIFFICILE</button>
+      <button class="btn_1" id="master">MASTER</button>
+    </ul>
+    <!-- importazione dei file di gioco -->
+    <script src="sudoku.js"></script>
+    <script src="sudoku_generator.js"></script>
+    <!-- finestra di gioco -->
+    <div id="game_window"></div>
+    <!-- lista degli aiuti -->
+    <ul id="h_list" class="column_cnt">
+      <h2>Aiuti</h2>
+      <div>
+        <input type="checkbox" id="error"></button>
+        <label for="error" class="help_name">Visualizza Errori</label>
+      </div>
+      <p class="description">Attivando questo aiuto ogni riga, colonna e riquadro che contiene un errore verrà evidenziata</p><br>
+      <div>
+        <input type="checkbox" id="highlight"></button>
+        <label for="highlight" class="help_name">Evidenzia Numeri</label>
+      </div>
+      <p class="description">Attivando questo aiuto si evidenziano tutti i numeri uguali a quello puntato dal mouse</p>
+      <button class="btn_2" id="reset">RESET</button>
+    </ul>
+  </div>
+</body>
+
+<!-- importazione del file con gli eventi dei bottoni -->
+<script src="btn_events.js"></script>
+
+</html>

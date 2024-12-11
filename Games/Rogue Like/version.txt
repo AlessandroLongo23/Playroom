@@ -1,0 +1,77 @@
+17 marzo:
+  - creazione di base del personaggio: movimento e sparo
+  - creazione del mondo di gioco
+  - aggiunta la mappa
+
+18 marzo:
+  - aggiunta la possibilità di muoversi tra le stanze
+  - aggiunti gli ostacoli e i muri alle stanze
+  - aggiunti i nemici (ancora nessun contatto con il giocatore nè tra di loro)
+  (circa 900 linee di codice)
+
+19 marzo:
+  - aggiunto il contatto tra gli oggetti e i personaggi nelle stanze tramite una funzione generale
+  - aggiunta la modalità "cage" alle stanze: non puoi uscire finchè non uccidi tutti i nemici
+  - aggiunti i vari tipi di nemici
+  - aggiunti i personaggi con attacco a distanza: mage, mech e hunter
+  (1087 linee di codice)
+
+20 marzo:
+  - caricato il gioco su internet: roguelike.altervista.org/game.html
+  - caricati alcuni sprite per prova
+  - aggiunti i personaggi melee: Knight, Tank, Assassin, Wall_Breaker
+  (1333 linee di codice)
+
+21 marzo:
+  - parametrizzate le animazioni e sistemati i range d'attacco dei peresonaggi melee
+  - aggiunto l'oscuramento della mappa per le stanze non ancora visitate
+  - aggiunta la possibilità di salire di piano
+  - creazione del menù di selezione del personaggio
+  (1722 linee di codice)
+
+22 marzo:
+  - modificato il layout del menù iniziale
+  - sviluppate le abilità di base dei personaggi
+  (2055 linee di codice)
+
+23 marzo:
+  - aggiunto la stanza del tempio (per aumentare di livello)
+
+24 marzo:
+  - aggiunto il livello 1, 2, 3 a tutti i personaggi
+  (2393 linee di codice)
+
+25 marzo:
+  - aggiunti il livello 4 (talento) e 5 per ogni personaggio
+  (2610 linee di codice)
+
+26 marzo:
+  - completato lo sviluppo di tutti e 5 i livelli per tutti e 7 i personaggi
+  - abbozzata la classe per i boss
+  - aggiunte le prime indicazioni a schermo per il giocatore
+  (2816 linee di codice)
+
+27 marzo:
+  - terminato lo sviluppo del primo boss
+  - aggiunti i disegni delle ambientazioni nel menù iniziale
+  (3069 linee di codice)
+
+28 marzo:
+  - aggiunte le altre due ambientazioni e inseriti gli sprites degli oggetti fisici e non
+  - modificato il sistema di gestione del boss
+  (3454 linee di codice)
+
+29 marzo:
+  - migliorato il sistema di spawn dei nemici: ora non si trovano più di fronte alle porte
+  - aggiunti altri sprites
+  - inserite le vite e il sistema di game over
+
+30 marzo:
+  - inserita la possibilità di mettere in pausa
+  - modificato il respawn del giocatore
+  - 
+
+to-do list:
+  - dardo liv.5 del cacciatore (esplosivo o ghost) e liv.5 cavaliere
+  - proiettile homing della strega (da modificare)
+  - hitbox del talento del mago (da controllare)

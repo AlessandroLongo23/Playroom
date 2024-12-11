@@ -1,0 +1,147 @@
+body {
+  background-color: rgb(208, 255, 220);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h2 {
+  font-family: 'Gotu', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(80, 255, 127);
+  margin: 0px;
+}
+
+.row_cnt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.column_cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top_page {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(80, 255, 127);
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+
+#main_header {
+  flex: 4;
+  font-family: consolas;
+  font-size: 60px;
+  position: relative;
+  text-shadow: 5px 5px 0px rgb(0, 183, 49);
+  padding: 20px 20px 20px 660px;
+  border: 0px;
+  margin: 0px;
+}
+
+#author {
+  flex: 1;
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  text-shadow: 2px 2px 0px rgb(0, 183, 49);
+  text-align: center;
+  position: relative;
+  margin: 0px 25px 0px 0px;
+  padding-top: 40px;
+}
+
+.btn_1 {
+  font-family: 'Gotu', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 100px;
+  padding: 5px 50px;
+  margin: 0px 0px;
+}
+
+.btn_2 {
+  width: 200px;
+  align-self: center;
+  font-family: 'Gotu', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 100px;
+  padding: 5px 50px;
+  margin: 50px 0px 25px 0px;
+}
+
+#d_list {
+  flex-basis: 25%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#game_window {
+  flex-basis: 25%;
+  padding: 0px;
+}
+
+#h_list {
+  flex-basis: 25%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.help_name {
+  display: inline;
+  font-family: 'Gotu', sans-serif;
+  font-size: 24px;
+  text-align: left;
+  color: rgb(0, 183, 49);
+}
+
+#error {
+  margin: 0px;
+  padding-right: 25px;
+}
+
+#highlight {
+  margin: 0px;
+}
+
+#grid {
+  background-color: rgb(255, 0, 0);
+}
+
+#easy {
+  color: rgb(80, 208, 255);
+  border: 1px rgb(80, 208, 255) solid;
+}
+
+#medium {
+  color: rgb(80, 255, 127);
+  border: 1px rgb(80, 255, 127) solid;
+}
+
+#hard {
+  color: coral;
+  border: 1px coral solid;
+}
+
+#master {
+  color: rgb(255, 80, 208);
+  border: 1px rgb(255, 80, 208) solid;
+}
+
+.description {
+  font-family: 'Gotu', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+}
+
+#reset {
+  color: black;
+  border: 1px black solid;
+}

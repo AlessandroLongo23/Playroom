@@ -1,0 +1,33 @@
+body {
+   background-color: #111;
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.column {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+#title {
+   font-size: 48px;
+   font-family: 'Nunito', sans-serif;
+   color: white;
+   text-align: center;
+   padding: 25px 0px;
+}
+
+.button {
+   font-size: 36px;
+   font-family: 'Nunito', sans-serif;
+   text-decoration: none;
+   color: black;
+   background-color: white;
+   padding: 10px 30px;
+   margin: 20px auto;
+}

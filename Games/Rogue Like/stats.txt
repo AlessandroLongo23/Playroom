@@ -1,0 +1,244 @@
+Ratings: 1, 2, 3, 4, 5
+Player_Health:
+Health_num * 20 + 30
+
+Damage to the Player:
+Enemy_damage * (10 - Player_Defense)
+
+Enemy_Health:
+Health_num * (12 + Health_num)
+
+Damage to the Enemy:
+Player_Damage * 8
+
+PLAYER LIST:
+
+- Knight
+  - Health: 4
+  - Defense: 3
+  - Speed: 3
+  - Starting weapon: Sword
+    - Damage: 3
+    - Fire rate: 30
+    - Bullet speed: -
+  - Primary Skill: The Player damages the enemies around him
+  - Secondary Skill: The Player is protected from three enemy attacks
+
+  LEVEL 1: Larger area of swing
+  LEVEL 2: Using Primary Skill, higher knockback and range
+  LEVEL 3: Attacking, enemy bullets may get bounced back
+  LEVEL 4: Unlock Secondary Skill
+  LEVEL 5: Using Secondary Skill, all enemy bullets are bounced back
+
+- Tank
+  - Health: 5
+  - Defense: 4
+  - Speed: 2
+  - Starting weapon: Iron fists
+    - Damage: 4
+    - Fire rate: 45
+    - Bullet speed: -
+  - Primary Skill: The Player becomes invincible for "x" seconds
+  - Secondary Skill: The Player throw a powerful punch that push the enemy on the opposite side
+
+  LEVEL 1: Higher knockback
+  LEVEL 2: Using Primary Skill, if low Health regenerates half Health bar
+  LEVEL 3: Attacks may knockback every surrounding enemy
+  LEVEL 4: Unlock Secondary Skill
+  LEVEL 5: Using Secondary Skill, all enemies hit are stunned
+
+- Mage
+  - Health: 3
+  - Defense: 3
+  - Speed: 4
+  - Starting weapon: Scepter
+    - Damage: 3
+    - Fire rate: 30
+    - Bullet speed: 3
+  - Primary Skill: The Player casts three lightning spells on casual enemies that may stun the target
+  - Secondary Skill: The Player casts a flame ray that pass through obstacles and may burn enemies
+
+  LEVEL 1: Bigger bullets
+  LEVEL 2: Using Primary Skill, always stuns the targets
+  LEVEL 3: Bullets pass through obstacles
+  LEVEL 4: Unlock Secondary Skill
+  LEVEL 5: Using Secondary Skill, all enemies get burned
+
+- Assassin
+  - Health: 3
+  - Defense: 3
+  - Speed: 5
+  - Starting weapon: Twin daggers
+    - Damage: 2
+    - Fire rate: 20
+    - Bullet speed: -
+  - Primary Skill: The Player dashes towards the direction he's facing and damages the enemies hit (3 rooms)
+  - Secondary Skill: The Player becomes invisible for 5 seconds (30 seconds)
+
+  LEVEL 1: Attacks may be critical
+  LEVEL 2: Using Primary Skill, larger area of attack
+  LEVEL 3: Attacks may be poisonous
+  LEVEL 4: Unlock Secondary Skill
+  LEVEL 5: Using Secondary Skill, all attacks are critical and poisonous
+
+- Hunter
+  - Health: 2
+  - Defense: 3
+  - Speed: 4
+  - Starting weapon: Crossbow
+    - Damage: 4
+    - Fire rate: 50
+    - Bullet speed: 4
+  - Primary Skill: The Player shoots a magic arrow that explodes where it hits (3 rooms)
+  - Secondary Skill: The Player shoots three arrows together (more powerful than normal arrows) (30 seconds)
+
+  LEVEL 1: Attacks may penetrate enemies
+  LEVEL 2: Using Primary Skill, higher range of explosion
+  LEVEL 3: Higher fire rate
+  LEVEL 4: Unlock Secondary Skill
+  LEVEL 5: Using Secondary Skill, all arrows are penetrative and faster
+
+- Wallbreaker
+  - Health: 4
+  - Defense: 2
+  - Speed: 3
+  - Starting weapon: Battle hammer
+    - Damage: 5
+    - Fire rate: 60
+    - Bullet speed: -
+  - Primary Skill: The Player damage and speed are increased for "x" seconds I(3 rooms)
+  - Secondary Skill: The Player generates a wave of damage that stuns the enemies (30 seconds)
+
+  LEVEL 1: Bigger area of impact
+  LEVEL 2: Using Primary Skill, bonus lasts longer
+  LEVEL 3: Attacks may stun enemies (2 seconds)
+  LEVEL 4: Unlock Secondary Skill
+  LEVEL 5: Using Secondary Skill, knockback the enemies
+
+- Mech
+  - Health: 1
+  - Defense: 5
+  - Speed: 3
+  - Starting weapon: Energy projectiles
+    - Damage: 2
+    - Fire rate: 20
+    - Bullet speed: 3.5
+  - Primary Skill: The Player spawns a turret that damages the enemies for 10 seconds (3 rooms)
+  - Secondary Skill: The Player shoots double bullets for 3 seconds
+
+  LEVEL 1: Sometimes really higher fire rate for 2 seconds
+  LEVEL 2: Using Primary Skill, turret fire rate increased
+  LEVEL 3: Bullets may explode into 8 more bullets when they hit
+  LEVEL 4: Unlock Secondary Skill
+  LEVEL 5: Using Secondary Skill, bullets always explode into 8 more bullets when they hit
+
+
+ENEMIES LIST:
+
+- Zombie (Melee)
+  - Health: 4
+  - Damage: 3
+  - Speed: 2
+  - Range: 30
+
+- Undead (Ranged)
+  - Health: 2
+  - Damage: 4
+  - Speed: 0
+  - Range: Infinite
+
+- Witch (Ranged)
+  - Health: 3
+  - Damage: 4
+  - Speed: 2
+  - Range: 200
+
+- Orc (Melee)
+  - Health: 5
+  - Damage: 5
+  - Speed: 1
+  - Range: 30
+
+- Kamikaze (Semi-Melee):
+  - Health: 1
+  - Damage: 5
+  - Speed: 5
+  - Range: 60
+
+
+BOSSES LIST:
+
+- 1° Floor
+  - Treant
+    - Health: 500
+    - Speed: 2
+    - Range: 120
+    - Moves:
+      - Attacks:
+        - Move (until he reaches the range) and Hit || 40 %
+          - Damage: 24
+          - Knockback
+          - durata: max 4 secondi + 1 secondo di pausa
+        - Casually spawn roots from the ground || 20 %
+          - Damage: 16
+          - Probability: 20 %
+          - durata: 1 secondo + 1 secondo
+        - Throw six of his roots that connects to the walls || 20 %
+          - Damage: 24
+          - durata: 3 secondo + 1 secondo
+        - Spawn 2 Zombies (20 %)
+          - durata: 0 + 1 secondo
+      - Recover (once per second for 3 seconds):
+        - Heal 100 hp || 10 %
+        - durata: 0 + 1 secondo
+
+  - Cactus King
+    - Health: 500
+    - Speed: 0
+    - Range: 100
+    - Size: 80
+    - Moves:
+      - Attacks (one every second for 3 seconds):
+        - Hit (if in range) || Always
+          - Damage: 24
+        - 3 series of Thorn bullets || 40 %
+          - Damage: 16
+          - Bullet Speed: 3.5
+        - Spawn a Zombie || 20 %
+        - Spawn an Undead || 20 %
+        - Spawn a Zombie and a Undead || 20 %
+      - Recovering (one every second for 3 seconds):
+        - Heal 100 hp || 10 %
+
+  - Yeti
+    - Health: 500
+    - Speed: 2.5
+    - Range: 80
+    - Moves:
+      - Attacks:
+        - Move (until he reaches the range) and Hit || 30 %
+          - Damage: 32
+          - Knockback
+        - Throw four snowballs at the player || 30 %
+          - Damage: 24
+        - Create a big snowball that moves and bounces on obstacles for 4 seconds || 20 %
+          - Damage: 8 - 32
+        - Hit the ground and damages all around || 20 %
+          - Damage: 24
+          - Knockback
+      - Recovering:
+        - Nothing
+
+- 2° Floor
+  - Spider Queen
+  - Mummy
+  - Snowflake
+
+- 3° Floor
+  -
+
+- 4° Floor
+  -
+
+- 5° Floor
+  -
